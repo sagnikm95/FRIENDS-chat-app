@@ -1,0 +1,94 @@
+
+<template name="myAtForm">
+
+    {{#unless hide}}
+        <div class="at-form">
+
+
+            <div class="form-child">
+            {{#if showOauthServices}}
+                {{> atOauth}}
+            {{/if}}
+            </div>
+
+            <div class="form-child">
+            {{#if showServicesSeparator}}
+                {{> atSep}}
+            {{/if}}
+            </div>
+
+            <div class="form-child">
+            {{#if showError}}
+                {{> atError}}
+            {{/if}}
+            </div>
+
+            <div class="form-child">
+            {{#if showResult}}
+                {{> atResult}}
+            {{/if}}
+             </div>
+
+            <div class="form-child">
+            {{#if showMessage}}
+                {{> atMessage}}
+            {{/if}}
+             </div>
+
+            <div class="form-child">
+            {{#if showPwdForm}}
+                {{> atPwdForm}}
+            {{/if}}
+             </div>
+
+            <div class="form-child">
+            {{#if showTermsLink}}
+                {{> atTermsLink}}
+            {{/if}}
+            </div>
+
+            <div class="form-child">
+            {{#if showSignInLink}}
+                {{> atSigninLink}}
+            {{/if}}
+            </div>
+
+
+            <div class="form-child">
+
+            {{#if showSignUpLink}}
+                {{> atSignupLink}}
+            {{/if}}
+             </div>
+
+            <div class="form-child">
+            {{#if showResendVerificationEmailLink}}
+                {{> atResendVerificationEmailLink}}
+            {{/if}}
+            </div>
+
+
+        </div>
+    {{/unless}}
+</template>
+
+<template name="MyAtTextInput">
+    <div class="at-input {{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
+      <div  id="at-field-label">
+        {{#if showLabels}}
+            <label for="at-field-{{_id}}">
+                {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}
+            </label>
+        {{/if}}
+      </div>
+      <div id='at-field-input'>
+        <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
+        {{#if hasIcon}}
+            <span class="{{iconClass}}"></span>
+        {{/if}}
+      </div>
+        {{#if hasError}}
+            <span>{{errorText}}</span>
+        {{/if}}
+    </div>
+</template>

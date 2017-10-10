@@ -1,0 +1,59 @@
+<template name="App_body">
+    <body class="bg-light">
+    {{> MainNav }}
+    {{#if currentUser}}
+        <div class="container-fluid" style="margin: 0px; text-align: left;padding:0px; height: 100%;">
+            <div class="row" style="margin: 0px; text-align: left;padding:0px;height: 100vh;">
+
+
+                <p class="col-md-4" style="margin: 0px; text-align: left;padding:0px;height: 100%;" >
+                    {{> sidepane}}
+                </p>
+
+                <p class="col-md-8" style="margin: 0px; text-align: left;padding:0px;height: 100%;" >
+                 <div id="content-container" style="height:100%;margin: 0px;padding:0px;">
+                {{> Template.dynamic template=main}}
+            </div>
+                </p>
+
+
+             </div>
+        </div>
+
+       {{else}}
+
+        <div class="form-body">
+        <div class="container">
+            <div class="jumbotron app-banner text-center">
+                <div class="row">
+
+
+                    <p class="col-md-5 ">
+                           <div class="app-descriptin-header">
+
+                                Connecting  One and All
+                                <div class="app-description">
+                                    With 'F.R.I.E.N.D.S', you'll get fast, simple, secure messaging and calling for free, available on phones all over the world.<br>
+
+                                </div>
+                           </div>
+                    </p>
+                    <p class="col-md-2"      ></p>
+                    <div class="col-md-5">
+                            <div class="card text-white">
+                                           <div class="body">
+                                            {{> loginModal }}
+                                            </div>
+
+
+                             </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+          </div>
+    {{/if}}
+
+    </body>
+</template>

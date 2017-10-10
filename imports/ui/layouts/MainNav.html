@@ -1,0 +1,20 @@
+<template name="MainNav">
+    <nav class="navbar navbar-inverse" style="margin: 0px">
+        <div class="container-fluid" style="margin: 0px;">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="/logo2.jpg" style="height: 60px;width:220px; display: inline-block"> </a>
+            </div>
+            <ul class="nav navbar-nav">
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{#if currentUser}}
+
+                        <li class="logout"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                 {{/if}}
+
+            </ul>
+        </div>
+    </nav>
+</template>

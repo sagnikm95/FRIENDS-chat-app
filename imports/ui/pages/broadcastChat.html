@@ -1,0 +1,37 @@
+<template name="broadcastChat">
+    <div class="chat-container" style="height: 100% ; padding: 0px;margin:0px;">
+        <div id="chat-window" style="height: 75%; border: 1px black solid;padding:0px 0px 10px 0px; margin:20px;">
+
+            <div style=" height:420px; padding: 0px;margin: 0px">
+                <div id="messages" style="overflow: auto; height: 100%;padding:10px;">
+                    <ul style="padding:0px 30px 0px 30px">
+
+
+                        {{#each message in messageList}}
+                            <li style="list-style-type: none; padding: 0;margin: 0;">
+                                <div  style="border-radius: 15px;;margin: 5px;padding: 10px;background-color: #eeeeee ">
+
+
+                                    <div class="content" style="padding: 5px 10px 5px 10px">
+                                        <label class="title is-5"  style="padding-left:5px;padding-right: 5px">{{message.message}}</label>
+                                    </div>
+
+                                </div>
+                            </li>
+                        {{/each}}
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="new-msg" style="height:25%; margin-left: 20px">
+            <form class="js-message-new" style="height: 40%; padding-top: 20px">
+                <input type="text" class="input is-primary is-large" style="padding:5px;height: 100%; width: 80%" name="message"
+                       placeholder="Type your message here...">
+                <input class="submit-button btn-primary is-large" type="submit" style="height: 90%; width: 18%; " value="Broadcast">
+            </form>
+        </div>
+    </div>
+</template>

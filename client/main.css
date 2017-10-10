@@ -1,0 +1,286 @@
+/* CSS declarations go here */
+#at-field-label label { width:100px; font-size:12px;font-weight: bold; font-family: "Segoe UI" ;
+    margin-bottom:5px;
+}
+#at-field-email{ width:200px; margin-bottom:5px;padding:5px; height: 30px;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal; }
+
+#at-field-password{ width:200px; margin-bottom:5px;padding:5px; height: 30px;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal; }
+
+#at-field-password_again{ width:200px; margin-bottom:5px;padding:5px; height: 30px;
+    font-family: "Segoe UI", serif;font-size:12px; font-weight: normal;}
+
+#at-field-firstName{ width:200px; margin-bottom:5px;padding:5px; height: 30px;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal; }
+
+#at-field-lastName{ width:200px; margin-bottom:5px;padding:5px; height: 30px;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal; }
+
+#at-field-userName{ width:200px; margin-bottom:5px;padding:5px; height: 30px;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal; }
+body{
+
+    background: #eee ;
+    background-image: url("chat-bg1.jpg");
+    min-height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.bg-light{
+    height: 100vh;
+    margin:0;
+    padding:0;
+
+}
+
+.you{
+    background-color: lightgreen;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal;
+    border-radius: 15px;
+    float: right;
+    overflow: hidden;
+    width:500px
+
+}
+
+.friend{
+    background-color: #eeeeee;
+    color: black;
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: normal;
+    border-radius: 15px;
+    width:500px;
+    overflow: hidden;
+
+}
+
+
+
+html{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+.app-description{
+    font-size:20px;
+    margin: 5px;
+    color: darkslategray ;
+    text-align: left;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.app-descriptin-header{
+    font-family: "Segoe UI", serif;font-size:50px;font-weight: bold;
+    margin: 50px;
+    color:darkslategrey;
+    background: rgba(200, 54, 54, 0);
+}
+
+#at-forgotPwd.at-link.at-pwd{
+    font-family: "Segoe UI", serif;font-size:12px;font-weight: bold;
+    margin: 0px;
+}
+.at-input{
+    margin-bottom:10px;
+}
+
+.at-Form{
+    margin: 10px;
+}
+
+.form-child-title{
+    margin:5px;
+    text-align: left;
+
+}
+
+.form-child{
+    margin:5px;
+    text-align: left;
+    font-family: "Segoe UI", serif;font-size:12px;
+    font-weight: bold;
+}
+
+
+.jumbotron {
+    background: rgba(200, 54, 54, 0);
+    color:white;
+}
+.jumbotron {position:relative;padding:50px;}
+.jumbotron .container {z-index:2;
+    position:relative;
+    z-index:2;
+}
+
+.navbar-header{
+
+}
+
+.logout a{
+    font-family: "Segoe UI", serif;font-size:20px;
+    font-weight: bold;
+}
+nav.navbar.navbar-inverse{
+    height: 80px;
+    margin: 0px;
+}
+.navbar-brand{
+    font-family: "Segoe UI", serif;font-size:30px;
+    font-weight: bold;
+}
+.card{
+    background: #eee ;
+    color:black;
+  width:75%;
+    padding:30px;
+    margin: 50px;
+}
+
+.user-list{
+    margin:5px;
+    padding: 5px;
+
+}
+
+.user-list-container{
+    margin:0px;
+    background-color: whitesmoke;
+}
+.profile-pic{
+    display: inline-block;
+    padding: 5px;
+}
+
+.user-name{
+    display: inline-block;
+    padding: 5px;
+    font-family: "Segoe UI", serif;font-size:12px;
+    font-weight: bold;
+}
+.card.is-dark{
+    color:black;
+    font-family: "Segoe UI";
+    padding:5px;
+    margin:0px;
+}
+
+
+.btn-primary{
+    font-family: "Segoe UI", serif;font-size:12px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    width:100px;
+}
+
+
+.at-signup-link p{
+    font-family: "Segoe UI", serif;font-size:12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   margin-right: 5px;
+    margin-top: 20px;
+
+}
+
+.at-terms-link p{
+    font-family: "Segoe UI", serif;font-size:10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+
+}
+
+.at-signin-link p{
+    font-family: "Segoe UI", serif;font-size:14px;
+
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+
+}
+
+.broadcast{cursor: pointer; cursor: hand;}
+.multicast{cursor: pointer; cursor: hand;}
+.user-item
+ { cursor: pointer; cursor: hand; }
+
+.at-error p{
+    font-family: "Segoe UI", serif;font-size:10px;
+    font-weight: bold;
+}
+
+.side-pane{
+    padding: 5px;
+    background: #eee;
+}
+
+.side-pane-welcome{
+    background: #eee ;
+    font-family: "Segoe UI", serif;font-size:25px;font-weight: bold;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.side-pane-list{
+    padding: 10px;
+
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.selected{
+    background-color: gainsboro ;color:black;
+    border-right-width: 5px;
+    border-right-color:darkslategrey ;
+    border-style: groove;
+}
+
+.notSelected{
+    background-color:white;color: black;
+    border-width: thin;
+    border-style: solid;
+}
